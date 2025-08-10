@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Family Tree Builder</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Family Tree Builder</h1>
-  <div id="tree"></div>
+let person = { name: "You", parents: [], children: [] };
 
-  <script src="script.js"></script>
-</body>
-</html>
+function addParent() {
+  let parentName = prompt("Enter parent's name:");
+  if (parentName) {
+    person.parents.push({ name: parentName, parents: [], children: [person] });
+    alert("Parent added: " + parentName);
+    console.log(person);
+  }
+}
 
+addParent();

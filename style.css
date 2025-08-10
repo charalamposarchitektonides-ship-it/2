@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#tree {
+  display: inline-block;
+  text-align: left;
+}
+
+.person {
+  border: 1px solid #555;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.children {
+  margin-left: 40px;
+  border-left: 2px dashed #ccc;
+  padding-left: 20px;
+}
